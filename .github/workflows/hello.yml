@@ -1,0 +1,15 @@
+name: Olá mundo cruel
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  saudacao:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Primeiro contato
+        run: echo "Olá mundo cruel"
+      - name: Resposta
+        run: echo "A extinção está chegando"
+  
