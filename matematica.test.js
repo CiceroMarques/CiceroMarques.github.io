@@ -1,23 +1,28 @@
 const { somar, subtrair, multiplicar, dividir } = require('./matematica');
 
 describe('operacoes matematicas', () => {
-  test('soma dois numeros', () => {
-    expect(somar(2, 3)).toBe(5);
-  });
+    test('soma dois numeros', () => {
+        expect(somar(2, 3)).toBe(5);
+    });
 
-  test('subtrai dois numeros', () => {
-    expect(subtrair(8, 3)).toBe(5);
-  });
+    test('subtrai dois numeros', () => {
+        expect(subtrair(8, 3)).toBe(5);
+    });
 
-  test('multiplica dois numeros', () => {
-    expect(multiplicar(4, 3)).toBe(12);
-  });
+    test('multiplica dois numeros', () => {
+        expect(multiplicar(4, 3)).toBe(12);
+    });
 
-  test('divide dois numeros', () => {
-    expect(dividir(10, 2)).toBe(5);
-  });
+    test('divide dois numeros', () => {
+        expect(dividir(10, 2)).toBe(5);
+    });
 
-  test('nao permite divisao por zero', () => {
-    expect(() => dividir(10, 0)).toThrow('Nao e possivel dividir por zero.');
-  });
+    test('nao permite divisao por zero', () => {
+        expect(() => dividir(10, 0)).toThrow('Nao e possivel dividir por zero.');
+    });
+
+    test('calcula a potencia de um numero com outro', () => {
+        expect(potencia(2, 3)).toBe(8);
+    });
 });
+
